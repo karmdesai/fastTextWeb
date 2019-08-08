@@ -1,0 +1,21 @@
+{
+  "name": "fasttextweb",
+  "version": "1.0.0",
+  "description": "fastTextWeb is a modified version of Facebook's text classification library (fastText) that is intended for use in the browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karmdesai/fastTextWeb.git"
+  },
+  "keywords": [
+    "fastText",
+    "text classification",
+    "natural language processing"
+  ],
+  "author": "Karm Desai <karmdesai18@gmail.com> (https://karmdesai.me)",
+  "license": "ISC",
+  "homepage": "https://github.com/karmdesai/fastTextWeb"
+}
