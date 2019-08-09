@@ -50,6 +50,6 @@ __label__1 0.991572 __label__2 0.00844757
 ```
 
 ## What's Next
-- [] Publish this package to npm registry.
-- [] Remove more unrequired functions and parts of the source code.
-- [] Change some of the source code so that the 'index.js' file can be included in a website.
+- [ ] Publish this package to npm registry.
+- [ ] Remove more unrequired functions and parts of the source code.
+- [ ] Change some of the source code so that the 'index.js' file can be included in a website.
