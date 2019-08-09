@@ -1,6 +1,6 @@
 # fastTextWeb
 
-[fastText](https://fasttext.cc) is a library provided by Facebook, Inc. for efficient text classification and representation learning. It's great for creating highly accurate text classification models in a short period of time. However, it can't easily be used to serve predictions on the web - **fastTextWeb** aims to solve this issue. The project was compiled into JavaScript using Emscripten and can be run using Node.
+[fastText](https://fasttext.cc) is a library provided by Facebook, Inc. for efficient text classification and representation learning. It's great for creating highly accurate text classification models in a short period. However, it can't easily be used to serve predictions on the web - **fastTextWeb** aims to solve this issue. The project was compiled into JavaScript using Emscripten and can be run using Node.
 
 ## Installation
 ```sh
@@ -13,7 +13,7 @@ $ npm install
 fastTextWeb only supports two commands, which helps keep the project files small. I chose to remove all of the other functions because they're not required in order to make predictions. This means that a potential user could train a model using vanilla fastText and then use fastTextWeb to deploy the model and form predictions on the web.
 
 ### Predict
-Use ```predict``` to obtain the **k** most likely labels for a piece of text. The argument ```k``` is optional,and equal to ```1``` by default. Remember to substitute ```model.bin``` with the relative path to the model and ```sample.txt``` with the relative path to piece of text.
+Use ```predict``` to obtain the **k** most likely labels for a piece of text. The argument ```k``` is optional, and equal to ```1``` by default. Remember to substitute ```model.bin``` with the relative path to the model and ```sample.txt``` with the relative path to piece of text.
 
 ```sh
 $ node index.js predict /working/model.bin /working/sample.txt k
@@ -50,6 +50,11 @@ __label__1 0.991572 __label__2 0.00844757
 ```
 
 ## What's Next
-- [ ] Publish this package to npm registry.
+- [x] Publish this package to the npm registry.
 - [ ] Remove more unrequired functions and parts of the source code.
 - [ ] Change some of the source code so that the 'index.js' file can be included in a website.
+
+## Acknowledgements
+1. [Stuart Watt](https://github.com/morungos) (Chief Technology Officer of [Turalt](https://github.com/turalt)) - I really appreciate the resources, help, and support that Stuart has provided. The whole project really wouldn't have been possible without him!
+2. [fastText](https://fasttext.cc) - A library provided by Facebook, Inc. for efficient text classification and representation learning.
+3. [Emscripten](https://emscripten.org) - A toolchain for compiling to WebAssembly, built using LLVM, that lets you run C and C++ on the web at near-native speed without plugins.
