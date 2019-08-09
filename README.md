@@ -37,3 +37,19 @@ usage: fasttext predict[-prob] <model> <test-data> [<k>] [<th>]
   <k>          (optional; 1 by default) predict top k labels
   <th>         (optional; 0.0 by default) probability threshold
 ```
+
+## Tests
+The folder ```tests``` contains several usage examples of ```fastTextWeb```.
+
+### Predict
+```sh
+$ node index.js predict-prob /working/tests/yelpReviewPolarity/yelpModel.ftz /working/tests/yelpReviewPolarity/sample.txt 2
+__label__2 0.72897 __label__1 0.27105
+__label__1 0.629605 __label__2 0.370416
+__label__1 0.991572 __label__2 0.00844757
+```
+
+## What's Next
+- [] Publish this package to npm registry.
+- [] Remove more unrequired functions and parts of the source code.
+- [] Change some of the source code so that the 'index.js' file can be included in a website.
