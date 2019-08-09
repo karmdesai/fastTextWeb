@@ -29,7 +29,7 @@ using namespace fasttext;
 void printUsage() {
   std::cerr
       << "usage: fasttext <command> <args>\n\n"
-      << "The commands supported by fast-text-web are:\n\n"
+      << "The commands supported by fastTextWeb are:\n\n"
       << "  predict                 predict most likely labels\n"
       << "  predict-prob            predict most likely labels with probabilities\n"
       << std::endl;
@@ -39,7 +39,7 @@ void printPredictUsage() {
   std::cerr
       << "usage: fasttext predict[-prob] <model> <test-data> [<k>] [<th>]\n\n"
       << "  <model>      model filename\n"
-      << "  <test-data>  test data filename (if -, read from stdin)\n"
+      << "  <test-data>  test data filename\n"
       << "  <k>          (optional; 1 by default) predict top k labels\n"
       << "  <th>         (optional; 0.0 by default) probability threshold\n"
       << std::endl;
