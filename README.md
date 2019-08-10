@@ -13,7 +13,7 @@ $ npm install
 fastTextWeb only supports two commands, which helps keep the project files small. I chose to remove all of the other functions because they're not required in order to make predictions. This means that a potential user could train a model using vanilla fastText and then use fastTextWeb to deploy the model and form predictions on the web.
 
 ### Predict
-Use ```predict``` to obtain the **k** most likely labels for a piece of text. The argument ```k``` is optional, and equal to ```1``` by default. Remember to substitute ```model.bin``` with the relative path to the model and ```sample.txt``` with the relative path to piece of text.
+Use ```predict``` to obtain the **k** most likely labels for a piece of text. The argument ```k``` is optional, and equal to ```1``` by default. Remember to substitute ```model.bin``` with the relative path to the model and ```sample.txt``` with the relative path to the piece of text.
 
 ```sh
 $ node index.js predict /working/model.bin /working/sample.txt k
