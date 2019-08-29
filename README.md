@@ -5,7 +5,7 @@
 ## Installation
 ```sh
 $ git clone https://https://github.com/karmdesai/fastTextWeb.git
-$ cd fastTexWweb
+$ cd fastTextWeb
 $ npm install
 ```
 
