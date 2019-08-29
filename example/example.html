@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <!-- Using this as an example requires the use of a live server. Use node to run server.js and this webpage will load. -->
+    <head>
+        <title>fastTextWeb Test</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+        <h1 class="text-center">fastTextWeb Test</h1>
+        <h5 class="jumbotron">This is an example of fastTextWeb in the browser. 
+            You might not be able to use 'loadModel' with this example since it won't be on the server.
+            As a result, you won't be able to serve up predictions. However, you can test certain functions from the console.
+        </h5>
+    </body>
+
+    <!-- Scripts -->
+    <script>
+        var Module = {
+        onRuntimeInitialized: function() {
+            // this will work
+            Module.testFunction();
+            
+            // this will not work since the file path does not yet exist (on the server)
+            Module.loadModel("/working/tests/balesModel/compressedModel.ftz");
+            Module.makePrediction("predict-prob", "today was an amazing day!", "1", "0.0");
+        }
+        };
+    </script>
+    <script src="../index.js"></script>
+</html>
