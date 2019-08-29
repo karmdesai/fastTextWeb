@@ -4,9 +4,7 @@
 
 ## Installation
 ```sh
-$ git clone https://https://github.com/karmdesai/fastTextWeb.git
-$ cd fastTextWeb
-$ npm install
+$ npm install fasttextweb
 ```
 
 ## Usage
@@ -19,7 +17,7 @@ Use ```loadModel``` to load a fastText model. The command takes in one argument,
 
 ```sh
 $ node
-> const fastText = require('./index.js');
+> const fastText = require('fasttextweb');
 > fastText.loadModel(<model>);
 ```
 
@@ -30,7 +28,7 @@ Use ```makePrediction``` to obtain the most likely labels for a piece of text. T
 
 ```sh
 $ node
-> const fastText = require('./index.js');
+> const fastText = require('fasttextweb');
 > fastText.loadModel(<model>);
 > fastText.makePrediction(<predictionType>, <textToClassify>, <k>, <th>);
 ```
@@ -50,7 +48,7 @@ The folder ```tests``` contains several usage examples of ```fastTextWeb```. Bel
 
 ```sh
 $ node
-> const fastText = require('./index.js');
+> const fastText = require('fasttextweb');
 > fastText.loadModel("working/tests/balesModel/compressedModel.ftz");
 The model has successfully been loaded!
 
