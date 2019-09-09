@@ -16,9 +16,9 @@ fastTextWeb only supports two commands, which helps keep the project files small
 Use ```loadModel``` to load a fastText model. The command takes in one argument, ```model```.
 
 ```sh
-const fastText = require('fasttextweb');
-
-fastText.loadModel(<model>);
+$ node
+> const fastText = require('fasttextweb');
+> fastText.loadModel(<model>);
 ```
 
 This function only takes in one argument, ```model```, which is the relative file path of the model you want to load.
@@ -27,10 +27,10 @@ This function only takes in one argument, ```model```, which is the relative fil
 Use ```makePrediction``` to obtain the most likely labels for a piece of text. The command takes in four arguments, ```predictionType```, ```textToClassify```, ```k```, and ```th```.
 
 ```sh
-const fastText = require('fasttextweb');
-
-fastText.loadModel(<model>);
-fastText.makePrediction(<predictionType>, <textToClassify>, <k>, <th>);
+$ node
+> const fastText = require('fasttextweb');
+> fastText.loadModel(<model>);
+> fastText.makePrediction(<predictionType>, <textToClassify>, <k>, <th>);
 ```
 
 This function takes in multiple arguments, which are all required.
@@ -47,9 +47,9 @@ This function takes in multiple arguments, which are all required.
 The folder ```tests``` contains several usage examples of ```fastTextWeb```. Below is an example use case of fastTextWeb with the **balesModel** dataset.
 
 ```sh
-const fastText = require('fasttextweb');
-
-fastText.loadModel("working/tests/balesModel/compressedModel.ftz");
+$ node
+> const fastText = require('fasttextweb');
+> fastText.loadModel("working/tests/balesModel/compressedModel.ftz");
 The model has successfully been loaded!
 
 > fastText.makePrediction("predict", "today was a really amazing day!", "1", "0.0");
