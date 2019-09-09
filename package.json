@@ -1,10 +1,10 @@
 {
   "name": "fasttextweb",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "fastTextWeb is a custom version of Facebook's text classification library (fastText) that is intended for use in the browser.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
