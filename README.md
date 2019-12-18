@@ -18,7 +18,7 @@ Use ```loadModel``` to load a fastText model. The command takes in one argument,
 ```sh
 $ node
 > const fastText = require('fasttextweb');
-> fastText.loadModel(<model>);
+> fastText.loadModel('working/<model>');
 ```
 
 This function only takes in one argument, ```model```, which is the relative file path of the model you want to load.
@@ -29,7 +29,7 @@ Use ```makePrediction``` to obtain the most likely labels for a piece of text. T
 ```sh
 $ node
 > const fastText = require('fasttextweb');
-> fastText.loadModel(<model>);
+> fastText.loadModel('working/<model>');
 > fastText.makePrediction(<predictionType>, <textToClassify>, <k>, <th>);
 ```
 
